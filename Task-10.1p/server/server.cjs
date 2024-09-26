@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const mailgun = new Mailgun(formData);
 const mg = mailgun.client({
     username: 'api',
-    key: process.env.MAILGUN_API_KEY || 'f0f357e72d022072e1f17dac737171a1-1b5736a5-d9593946'
+    key: process.env.MAILGUN_API_KEY || '//for security reasons, this is not the actual key'
 });
 
 app.post('/subscribe', (req, res) => {
